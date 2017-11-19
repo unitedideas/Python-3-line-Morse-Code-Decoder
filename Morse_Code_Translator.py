@@ -24,6 +24,7 @@ mcode = {'A': '.-', 'B': '-...', 'C': '-.-.',
 decoded = input("Please enter a sentence: ").upper()
 
 # Done in 3 lines with Jeff's help
+# For each char in the string from the user, the key.item is printed into a list and then joined before printing
 print (" ".join([mcode[key] for key in decoded]))
 # Thanks Jeff
 
