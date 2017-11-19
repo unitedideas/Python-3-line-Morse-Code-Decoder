@@ -23,10 +23,7 @@ mcode = {'A': '.-', 'B': '-...', 'C': '-.-.',
 # Need to get an input from the user
 decoded = input("Please enter a sentence: ").upper()
 
+# Done in 3 lines with Jeff's help
+print (" ".join([mcode[key] for key in decoded]))
+# Thanks Jeff
 
-# done in 3 lines, but it's a list...
-print ([mcode[key] for key in decoded])
-
-#takes 2 lines to print without being in a list...
-for x in decoded:
-    print (mcode[x], end=" ")
